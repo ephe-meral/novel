@@ -1,0 +1,19 @@
+{{ partial "head.html" . }}
+
+{{ partial "header.html" . }}
+
+<div class="page-content wrapper home">
+  <h1 class="post-title" itemprop="name headline">Kapitel</h1>
+  <ul class="post-list">
+    {{ range where .Data.Pages.ByWeight "Section" "chapter" }}
+      <li>
+        <a class="post-linklist" href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
+        <span style="float:right;" class="post-meta">{{ .Date.Format "Jan 2, 2006" }}</span>
+      </li>
+    {{ end }}
+  </ul>
+</div>
+
+{{ partial "footer.html" . }}
+
+{{ partial "foot.html" . }}

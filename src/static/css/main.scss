@@ -1,0 +1,65 @@
+// http://www.dtelepathy.com/blog/inspiration/beautiful-color-palettes-for-your-next-web-project
+
+// vintage romatinc
+$vr-dark-aubergine: #260126;
+$vr-brighter-violet: #59323C;
+$vr-pale-violet: #AB7180; // added
+$vr-paper: #F9F4E0; //#F2EEB3;
+$vr-pale-brown: #af9b60; //#BFAF80;
+$vr-brown: #8C6954;
+
+// generated
+$gn-dark-blue: #151A1D;
+$gn-blue: #447C7D;
+$gn-light-blue: #71A59F;
+$gn-paper: #F2F1D2;
+$gn-yellow: #CFAB42;
+
+$gn-darker-blue: #385472;
+
+// Our variables
+$base-font-family: "Consolas", Consolas, monaco, monospace;
+$base-font-size:   16px;
+$base-font-weight: 400;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       $gn-blue; //$vr-brighter-violet; //#111;
+$brand-color:      $gn-darker-blue; //$vr-pale-brown; //#2a7ae2;
+$background-color: $gn-dark-blue; //$vr-paper; //#fdfdfd;
+
+$grey-color:       $gn-light-blue; //$vr-pale-violet; //#828282;
+$grey-color-light: $gn-light-blue; //$vr-pale-violet; //lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    800px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout",
+        "syntax-highlighting"
+;

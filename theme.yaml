@@ -1,0 +1,15 @@
+name: novel
+license: WTFPL
+licenselink: "https://github.com/ephe-meral/novel/blob/master/LICENSE"
+description: "An online novel theme for hugo."
+homepage: "https://github.com/ephe-meral/novel"
+tags: ["", ""]
+features: ["", ""]
+min_version: 0.14
+
+author:
+  name: "Johanna Appel"
+  homepage: "https://github.com/ephe-meral"
+
+paginate: 1
+paginatePath: "chapter"
