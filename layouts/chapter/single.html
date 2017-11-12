@@ -17,10 +17,14 @@
 
     </div>
 
-    {{ if .PrevInSection }}
-      <div style="center"><a href="{{ .PrevInSection.Permalink }}">weiter -></a></div>
-    {{ end }}
-
+      <div style="text-align:center;">
+        {{ if .NextInSection }}
+          <a href="{{ .NextInSection.Permalink }}"><- davor</a>
+        {{ end }}
+        {{ if .PrevInSection }}
+          <a href="{{ .PrevInSection.Permalink }}">weiter -></a>
+        {{ end }}
+      </div>
   </article>
 </div>
 
